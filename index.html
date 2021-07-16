@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IISCA Esrever</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="mainDiv">
+            <h1>IICSA Esrever</h1>
+            <a onclick="openMoreProjects()" href="#">More projects like this (need to allow popups)</a>
+            <h2>Encode/Decode</h2>
+            <textarea id="encodeInput" class="inputOutputBox"
+                placeholder="Enter text to encode or decode"></textarea>
+            <br>
+            <button onclick="encode()" class="actionButton">Encode/Decode!</button>
+            <br>
+            <br>
+            <p>Result:</p>
+            <textarea id="encodeOutput" class="inputOutputBox"></textarea>
+
+            <p>Note: there are no seperate encoding/decoding areas as
+            encoding is a reversing operation,
+            meaning that encoding is actually the same as decoding. 
+            Therefore if you encode something twice,
+            you actually decode it.</p>
+        </div>
+    </body>
+    <script src="https://unpkg.com/spnr/cdn/latest/spnr.min.js"></script>
+    <script src="iicsaEsrever.js"></script>
+    <script src="script.js"></script>
+</html>
